@@ -1,0 +1,36 @@
+{
+  "name": "nodegui-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Atul R <atulanand94@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack && qode ./dist/index.js",
+    "debug": "webpack && qode --inspect ./dist/index.js"
+  },
+  "dependencies": {
+    "@nodegui/nodegui": "^0.36.0",
+    "api": "^3.4.2",
+    "coinbase-pro": "^0.9.0",
+    "lodash": "^4.17.21",
+    "wait-for-user-input": "^1.0.0"
+  },
+  "devDependencies": {
+    "@nodegui/packer": "^1.4.1",
+    "@types/node": "^16.4.13",
+    "clean-webpack-plugin": "^3.0.0",
+    "file-loader": "^6.2.0",
+    "native-addon-loader": "^2.0.1",
+    "timestampconvertjs": "^1.0.5",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.3.5",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.3",
+    "utf-8-validate": "^5.0.5"
+  }
+}
